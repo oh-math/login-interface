@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <p>Crie uma conta agora mesmo e comece a compartilhar!</p>
+
+    <div class="interact-form">
+      <h1>Crie sua conta!</h1>
+      <p>
+        Se cadastre para fazer suas próprias postagens e até mesmo postar suas
+        fotos favoritas
+      </p>
+      <form class="subscribe" method="post" action="">
+        <label for="name"
+          >Seu nome*
+          <input
+            class="sub-input"
+            id="name"
+            placeholder="Digite seu nome"
+            name="name"
+            type="text"
+            required
+        /></label>
+        <label for="email-address"
+          >Endereço de e-mail*
+          <input
+            class="sub-input"
+            id="email-address"
+            placeholder="Entre seu e-mail"
+            name="email-address"
+            type="text"
+            required
+        /></label>
+        <label for="password"
+          >Crie uma senha*
+          <input
+            class="sub-input"
+            id="password"
+            placeholder="Insira uma senha"
+            name="password"
+            type="password"
+            required
+        /></label>
+
+        <hr />
+
+        <button class="btn create-account" type="submit">Criar conta</button>
+        <p class="or">ou</p>
+        <button class="btn create-with-google" type="submit" >
+          <img
+            src="./assets/Google - Original.png"
+            alt="Google Logo"
+          />
+          Entrar com o Google
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
