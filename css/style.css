@@ -5,11 +5,7 @@
    License: none (public domain)
 */
 
-:root {
-  --FORMBG-COLOR: #8f95d3;
-  --FORM-TEXT-COLOR: #fff;
-}
-
+/* ----------- RESET ---------------- */
 html,
 body,
 div,
@@ -113,8 +109,10 @@ section {
   display: block;
 }
 body {
+  display: flex;
   line-height: 1;
   font-family: "Inter", sans-serif;
+  background-color: #fdfdfd;
 }
 ol,
 ul {
@@ -136,19 +134,65 @@ table {
   border-spacing: 0;
 }
 
+/* ------------ VARIABLES -------------------- */
+:root {
+  --FORMBG-COLOR: #8f95d3;
+  --FORM-TEXT-COLOR: #fff;
+}
+
+.illustrative-layer {
+  display: flex;
+  justify-content: center;
+  background-color: #8f95d3;
+  width: 50%;
+  height: 100%;
+}
+
+.interface {
+  position: absolute;
+  width: 251.26px;
+  height: 224.07px;
+  
+  border: 1px solid #8F95D3;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.illustrative-layer p {
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.interact-form h1 {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+.interact-form p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
 .interact-form {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   flex-flow: column;
+
+  width: 50%;
 }
 
 .subscribe {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   flex-flow: column wrap;
 
+  margin: 53px 0 0 0;
   width: 25.5rem;
   height: 34.5rem;
   color: var(--FORM-TEXT-COLOR);
@@ -170,6 +214,10 @@ table {
   font-size: 1rem;
 }
 
+.subscribe label:nth-child(3) input {
+  margin-bottom: 0;
+}
+
 label {
   font-weight: 600;
   font-size: 1rem;
@@ -189,7 +237,7 @@ hr {
   cursor: pointer;
 
   color: #000;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
 }
 
@@ -197,13 +245,12 @@ hr {
   background-color: #89daff;
 }
 
-
 .create-with-google {
   background-color: #fff;
   text-align: center;
 }
 
 .or {
-  font-weight: 600;
+  font-weight: 700;
   margin: 14px;
 }
